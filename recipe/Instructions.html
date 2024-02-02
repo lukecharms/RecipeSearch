@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title> Recipe helper </title>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-content">
+    <div id="back">
+        <a href="index.html"> New Search</a>
+    </div>
+    <h1 id="h1-instructions">Meal Instruction</h1>
+    <div id="meal-instructions"></div>
+    </div>
+    <script>
+        const mealDetails=document.getElementById('meal-instructions');
+        const html= localStorage.getItem('html');
+        mealDetails.innerHTML=html;
+
+     </script>
+</body>
